@@ -112,7 +112,7 @@ def get_relevant_links(nlp, query, vectorizer, vectors, links, n=5, thres=0.1, u
     if index != -1:
         result_links = query_from(np.array(links)[index], n, usr)
     if result_links == -1:
-        return (index, ['http://careers.humber.ca'])
+        return (index, ['https://careers.humber.ca'])
     if flag and 'https://careers.humber.ca/resources-career.php' in result_links:
         result_links.remove('https://careers.humber.ca/resources-career.php')
         result_links = ['https://careers.humber.ca/resources-career.php'] + result_links
